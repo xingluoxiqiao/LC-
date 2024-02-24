@@ -11,7 +11,7 @@ public class BlogHelper {
     public static String replaceImageSyntax(String inputText) {
         // 将 ![[xxx.png]] 替换为 <img src="/post-img/xxx.png" alt="图片损坏" style="zoom:50%;" />
         return inputText.replace("![[", "<img src=\"/post-img/")
-                .replace("]]", "\" alt=\"图片损坏\" style=\"zoom:50%;\" />");
+                .replace("]]", "\" alt=\"图片损坏\" style=\"zoom:100%;\" />");
     }
 
     public static void main(String[] args) {
