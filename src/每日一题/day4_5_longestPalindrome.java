@@ -1,6 +1,6 @@
 package 每日一题;
 //最长回文字串
-public class longestPalindrome_day4_5 {
+public class day4_5_longestPalindrome {
     //中心扩散
     public String longestPalindrome(String s) {
         if(s.length()==0||s==null) return "";

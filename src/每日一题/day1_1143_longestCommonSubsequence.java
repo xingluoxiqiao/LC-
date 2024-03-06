@@ -1,6 +1,6 @@
 package 每日一题;
 //最长公共子序列
-public class longestCommonSubsequence_day1 {
+public class day1_1143_longestCommonSubsequence {
     public int longestCommonSubsequence(String text1, String text2) {
         int m=text1.length(),n=text2.length();
         //dp[i][j]是遍历到text1i和text2j时的最长公共子序列长度

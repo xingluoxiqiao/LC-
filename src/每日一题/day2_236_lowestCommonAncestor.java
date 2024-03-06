@@ -1,6 +1,6 @@
 package 每日一题;
 //二叉搜索树的最近公共祖先
-public class lowestCommonAncestor_day2 {
+public class day2_236_lowestCommonAncestor {
     //二叉搜索树特点：中序遍历是有序的(左侧所有节点小于当前节点，右侧所有节点大于当前节点)
     //若pq分散在当前节点左右子树上，则返回当前节点
     //若pq在当前节点同一侧，遍历这一侧

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 //二叉搜索树最近节点查询
 //中序遍历+二分查找
-public class closestNodes_day3 {
+public class day3_2476_closestNodes {
     public List<List<Integer>> closestNodes(TreeNode root, List<Integer> queries) {
         List<Integer> arr=new ArrayList<>();
         dfs(root,arr);

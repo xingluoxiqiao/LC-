@@ -5,7 +5,7 @@ package 每日一题;
 import java.util.*;
 
 //层序遍历+排序
-public class kthLargestLevelSum_day2 {
+public class day2_2583_kthLargestLevelSum {
     public long kthLargestLevelSum(TreeNode root, int k) {
         Queue<TreeNode> queue=new ArrayDeque<>();
         queue.offer(root);
