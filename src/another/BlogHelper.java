@@ -14,22 +14,37 @@ public class BlogHelper {
                 .replace("]]", "\" alt=\"图片损坏\" style=\"zoom:100%;\" />");
     }
 
+    public static void refactor(int start,int end) {
+        for(int i=start;i<=end;i++){
+            System.out.println("- ../source/cover-webp/("+i+").webp");
+        }
+    }
+
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Enter the image syntax (or type 'exit' to quit): \n");
+//        while (true) {
+//
+//            String input = scanner.nextLine(); // 读取整行输入
+//
+//            if (input.equalsIgnoreCase("exit")) {
+//                System.out.println("Exiting the program.");
+//                break;
+//            }
+//
+//            String result = replaceImageSyntax(input);
+//            System.out.println(result);
+//        }
+//
+//        scanner.close();
+//    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the image syntax (or type 'exit' to quit): \n");
-        while (true) {
+        int start = scanner.nextInt();
+        int end= scanner.nextInt();
 
-            String input = scanner.nextLine(); // 读取整行输入
-
-            if (input.equalsIgnoreCase("exit")) {
-                System.out.println("Exiting the program.");
-                break;
-            }
-
-            String result = replaceImageSyntax(input);
-            System.out.println(result);
-        }
-
+        refactor(start,end);
         scanner.close();
     }
 }
